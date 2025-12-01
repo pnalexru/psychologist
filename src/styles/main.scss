@@ -113,6 +113,7 @@ body {
   }
 
   &--large {
+    max-width: 250px;
     padding: 16px 32px;
     font-size: 18px;
     background: #4a6fa5;
@@ -149,51 +150,51 @@ body {
 }
 
 // Преимущества
-.advantages {
-  padding: 80px 0;
+// .advantages {
+//   padding: 80px 0;
 
-  .section-title {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    margin-bottom: 50px;
-    color: #333;
-  }
-}
+//   .section-title {
+//     text-align: center;
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 36px;
+//     margin-bottom: 50px;
+//     color: #333;
+//   }
+// }
 
-.advantages__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-}
+// .advantages__grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   gap: 30px;
+// }
 
-.advantage-card {
-  text-align: center;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+// .advantage-card {
+//   text-align: center;
+//   padding: 30px;
+//   border-radius: 10px;
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+//   transition: transform 0.3s;
 
-  &:hover {
-    transform: translateY(-10px);
-  }
+//   &:hover {
+//     transform: translateY(-10px);
+//   }
 
-  &__icon {
-    font-size: 48px;
-    color: #4a6fa5;
-    margin-bottom: 20px;
-  }
+//   &__icon {
+//     font-size: 48px;
+//     color: #4a6fa5;
+//     margin-bottom: 20px;
+//   }
 
-  h3 {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px;
-    color: #333;
-  }
+//   h3 {
+//     font-family: 'Montserrat', sans-serif;
+//     margin-bottom: 15px;
+//     color: #333;
+//   }
 
-  p {
-    color: #666;
-  }
-}
+//   p {
+//     color: #666;
+//   }
+// }
 
 // Footer
 .footer {
@@ -222,5 +223,103 @@ body {
     font-size: 36px;
     margin-bottom: 30px;
     color: #333;
+  }
+}
+
+/* Стили для статьи психолога */
+.psychologist-article {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4a6fa5;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .article-author {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+}
+
+.qa-block {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .question {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "В:";
+      position: absolute;
+      left: 0;
+      color: #4a6fa5;
+      font-weight: 700;
+    }
+  }
+
+  .answer {
+    color: #444;
+    line-height: 1.7;
+    font-size: 16px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #4a6fa5;
+      font-weight: 700;
+    }
+  }
+}
+
+/* Стили для картинки в статье */
+.article-image {
+  margin: 40px 0;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  .image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
   }
 }

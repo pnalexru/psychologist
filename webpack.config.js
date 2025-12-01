@@ -27,8 +27,8 @@ module.exports = {
 
 		// Другие страницы
 		new HtmlWebpackPlugin({
-			template: './src/pages/about.html',
-			filename: 'about.html',
+			template: './src/pages/question.html',
+			filename: 'question.html',
 			inject: 'body',
 		}),
 		new HtmlWebpackPlugin({
@@ -49,7 +49,19 @@ module.exports = {
 
 		// Копируем статические файлы
 		new CopyPlugin({
-			patterns: [{ from: 'src/assets', to: 'assets', noErrorOnMissing: true }],
+			patterns: [
+				{ from: 'src/assets', to: 'assets', noErrorOnMissing: true },
+				{
+					from: 'src/assets/images',
+					to: 'assets/images',
+					noErrorOnMissing: true, // Не падать, если папки нет
+				},
+				{
+					from: 'src/assets/fonts',
+					to: 'assets/fonts',
+					noErrorOnMissing: true,
+				},
+			],
 		}),
 	],
 	module: {
