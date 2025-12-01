@@ -32,18 +32,18 @@ module.exports = {
 			inject: 'body',
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/pages/services.html',
-			filename: 'services.html',
+			template: './src/pages/children.html',
+			filename: 'children.html',
 			inject: 'body',
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/pages/blog.html',
-			filename: 'blog.html',
+			template: './src/pages/feelings.html',
+			filename: 'feelings.html',
 			inject: 'body',
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/pages/contacts.html',
-			filename: 'contacts.html',
+			template: './src/pages/try.html',
+			filename: 'try.html',
 			inject: 'body',
 		}),
 

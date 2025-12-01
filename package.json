@@ -6,9 +6,7 @@
 	"scripts": {
 		"start": "webpack serve --mode development --open",
 		"build": "webpack --mode production",
-		"predeploy": "npm run build && npm run copy-to-docs",
-		"deploy": "gh-pages -d docs",
-		"copy-to-docs": "mkdir -p docs && cp -r dist/* docs/"
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
