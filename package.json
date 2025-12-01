@@ -1,5 +1,5 @@
 {
-	"name": "psysite",
+	"name": "psychologist",
 	"version": "1.0.0",
 	"description": "Сайт психолога - учебный проект",
 	"main": "index.js",
@@ -12,15 +12,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/pnalexru/psySite.git"
+		"url": "git+https://github.com/pnalexru/psychologist.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/pnalexru/psySite/issues"
+		"url": "https://github.com/pnalexru/psychologist/issues"
 	},
-	"homepage": "https://pnalexru.github.io/psySite/",
+	"homepage": "https://pnalexru.github.io/psychologist/",
 	"devDependencies": {
 		"copy-webpack-plugin": "^11.0.0",
 		"css-loader": "^6.11.0",
